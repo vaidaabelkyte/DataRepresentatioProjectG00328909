@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diary -Home</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+.jumbotron { 
+ font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color:		#CD6889; 
+    color:#F2F2F2;
+}
+.container {
+ background-color:		#FFF0F5; 
+  color:#CD2990;
+      padding: 60px 50px;
+	 
+  }
+  
+  .well{
+      background-color: #FFF0F5; 
+    color:#CD2990
+	
+  }
+  
+  a.new:link {color:#FFF0F5;}
+a.new:visited {color:#FFF0F5;}
+a.new:hover {font-size:150%;}
+
+ a.go:link {color:#9A32CD;}
+a.go:visited {color:#9A32CD;}
+a.go:hover {font-size:150%;}
+</style>
+
+  <body>
+    <br>
+     <div class="jumbotron text-center">
+	 <div class="well"><h4>Click <a class="go" href ="/newpost" > <strong>HERE </strong></a> to add a new post </a> or ---->  <a class="go" href ="/logout" > <strong>LOG OUT</strong> </a></h4> </div>
+    
+
+	<h1>My dear diary...</h1> 
+    <p>Personal notebook</p> 
+	
+	
+     <br>
+	 
+	
+	 {{ message }}
+
+	  <div class="container text-center">
+  
+   <br>
+  
+     {% for post in posts %}
+	
+    
+	<h2><strong>{{ post["title"] }}</strong></h2> <br>
+
+	
+	{{ post["blog"] }} <br>
+	 <br>
+	   
+	  <br>
+	  
+	  {% endfor %}
+ 
+</div>
+     
+	  <br>
+	   <br>
+	  
+	  <p><b><a class="new" href="/newpost">NEW POST</a></b></p>
+	   <br>
+	    <p><b><a class="new" href="/logout">LOG OUT</a></b></p>
+		
+    </div>
+  </body>
+</html>

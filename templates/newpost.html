@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new post</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <style>
+.jumbotron { 
+ font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color:		#CD6889; 
+    color:#F2F2F2;
+	
+	
+}
+.container-fluid {
+ background-color:		#FFF0F5; 
+  color:#CD2990;
+      padding: 160px 50px;
+	 
+  }
+  .btn { 
+ 
+    background-color: #F2F2F2;
+	 border: none;
+    color:#CD6889;
+	
+	
+}
+</style>
+
+  <body>
+    <br>
+<div class="jumbotron text-center">
+
+<h1>New Post...</h1> 
+  <form action="/posting" method="POST">
+	 <div class="container">
+    <div class="form-group">
+	<br>
+	<input type="text" class="form-control" name="title" id="title" placeholder="Title">
+		<br>
+		<textarea class="form-control" rows="10" name="blog" id="blog" placeholder="Post">
+		</textarea>
+		</div>  
+		<button type="submit" class="btn btn-primary">POST</button>
+		
+
+</form>
+    </div>
+	</div>
+  </body>
+</html>
