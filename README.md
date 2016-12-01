@@ -9,7 +9,7 @@ I have created Single-Page Web Application (SPA) which is a small model of blog-
 It has a home page with a list of posts, the LogIn page and the 'add post' page.
 
 
-The SPA is build using the in class examples aswell lecturer examples and documentation of <a href="http://flask.pocoo.org/docs/0.11/">Flask</a>
+The SPA is build using the in class examples aswell lecturer examples on his Github page and documentation of <a href="http://flask.pocoo.org/docs/0.11/">Flask</a>
 and <a href="https://docs.python.org/2/library/sqlite3.html">Sqlite3.</a>
 It is written in  <a href="https://www.python.org/">Python3.</a> using <a href="http://flask.pocoo.org/docs/0.11/">Flask</a> web micro-framework. They both must be installed 
 to run the application.
@@ -19,10 +19,10 @@ to run the application.
 <h2>Instructions to run the application</h2>
 The database file added in repository.
 The app can be run locally :
-$ python webapp.py
+$ python app.py
 
-Without .db file user must first run: 
-$ python sql.py   ---->   to create a file and then :
+Without .db file user must first run: <br>
+$ python sql.py   ---->   to create a file and then :<br>
 $ python app.py   -----> to star the app.
 
 
